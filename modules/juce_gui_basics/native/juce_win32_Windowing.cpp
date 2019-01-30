@@ -624,7 +624,7 @@ const int KeyPress::escapeKey               = VK_ESCAPE;
 const int KeyPress::backspaceKey            = VK_BACK;
 const int KeyPress::deleteKey               = VK_DELETE         | extendedKeyModifier;
 const int KeyPress::insertKey               = VK_INSERT         | extendedKeyModifier;
-const int KeyPress::tabKey                  = VK_TAB;
+const int KeyPress::tabKey                  = VK_TAB            | extendedKeyModifier;
 const int KeyPress::leftKey                 = VK_LEFT           | extendedKeyModifier;
 const int KeyPress::rightKey                = VK_RIGHT          | extendedKeyModifier;
 const int KeyPress::upKey                   = VK_UP             | extendedKeyModifier;
@@ -2973,6 +2973,7 @@ private:
             case VK_END:
             case VK_DELETE:
             case VK_INSERT:
+            case VK_TAB:
             case VK_F1:
             case VK_F2:
             case VK_F3:
